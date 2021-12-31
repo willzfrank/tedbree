@@ -221,3 +221,167 @@ html {
 .form__group:not(:last-child) {
   margin-bottom: var(--span-l);
 }
+
+/* JOB APPLICATION */
+
+.px-45 {
+  margin-top: 45px;
+}
+.JobApplicationContainer {
+  width: 870px;
+  height: 1483px;
+  border-radius: 10px;
+  background: #f9fbfd;
+  padding: 0px 63px;
+  margin: 60px 0px;
+}
+
+.JobApplicationHeader {
+  font-family: var(--Gilroy);
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.12em;
+  color: var(--blue);
+  margin-bottom: 16px;
+  padding-top: 60px;
+}
+
+.JobApplicationLocationIcon {
+  width: 18.58px;
+  height: 25px;
+  color: #62becb;
+}
+
+.JobApplicationClose {
+  margin-top: 60px;
+  color: #3e3e40;
+  height: 14.14000129699707px;
+  width: 14.141249656677246px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.JobApplicationAddress {
+  width: 115px;
+  height: 22px;
+  font-family: var(--Gilroy);
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.12em;
+  color: #3e3e40;
+  margin-left: 11px;
+}
+
+.JobApplicationInput {
+  width: 745px;
+  height: 69px;
+  background: #ffffff;
+  border: 0.5px solid var(--blue);
+  box-sizing: border-box;
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 12px 0px;
+}
+
+.image-upload > input {
+  display: none;
+}
+
+.JobApplicationCloudUpload {
+  width: 90.83px;
+  height: 68.5px;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.span__text {
+  font-family: var(--Gilroy);
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.UploadBox {
+  background: #ffffff;
+  border: 0.5px solid var(--blue);
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 745px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.JobApplicationSubmitButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  width: 745px;
+  height: 73px;
+  background: #0f4a7b;
+}
+
+.button__box {
+  font-family: var(--Gilroy);
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: white;
+  margin: 0px 10px;
+}
+
+.browse__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: 192px;
+  height: 50px;
+  background: var(--blue);
+  border-radius: 10px;
+}
+
+/* JOB CREATION SERVICE */
+
+.JobCreationAddress {
+  width: 600px;
+  height: 17px;
+  font-family: var(--Gilroy);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  color: #3e3e40;
+}
+
+.select__box {
+  width: 94px;
+  height: 17px;
+  font-family: Gilroy-Regular ☞;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: rgba(62, 62, 64, 0.8);
+  display: flex;
+  justify-content: space-around;
+}
+
+.select__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0px 20px 20px;
+}
+
+.arrow__down {
+  width: 20px;
+  height: 30.44px;
+}
