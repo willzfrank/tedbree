@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --Gilroy: "Gilroy", sans-serif;
+  --Montserrat: "Montserrat", sans-serif;
+  --unit: 10px;
+  --size-xs: 12px;
+  --size-s: 14px;
+  --size-m: 16px;
+  --size-l: 24px;
+  --size-xl: 32px;
+  --size-2xl: 48px;
+  --span-xs: var(--unit);
+  --span-s: calc(var(--unit) * 2);
+  --span-m: calc(var(--unit) * 3);
+  --span-l: calc(var(--unit) * 4);
+  --span-xl: calc(var(--unit) * 5);
+  --span-2xl: calc(var(--unit) * 6);
+  --weight-xsm: 300;
+  --weight-sm: 400;
+  --weight-md: 500;
+  --weight-lg: 600;
+  --weight-xlg: 700;
+  --weight-xxlg: 800;
+  --weight-2xxlg: 900;
+  --body-bg: #f9fbfd;
+  --red: #f57d7d;
+  --blue: #0f4a7b;
+  --white: #ffffff;
+  --circle-1: #62becb;
+  --circle-2: #dd4033;
+  --circle-3: #62becb;
+  --gray: #3e3e40;
+  --btn-red: #ea5566;
+  --text-gray: #3e3e40b3;
+  --light-blue: #62becb;
+  --dark-gray: #0e0e10;
+  --light-blue-2: #3d8ba8;
+  --light-red: #ffeded;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  font-family: var(--Gilroy);
+  font-style: normal;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.btn--submit {
+  font-size: calc(var(--size-m) + 2px);
+  font-weight: var(--weight-xxlg);
+  line-height: 22px;
+  letter-spacing: 0.12em;
+  color: var(--white);
+  padding: var(--span-s) var(--span-2xl);
+  background: var(--blue);
+  border-radius: 10px;
+}
+
+/* LOGIN */
+
+.login__heading {
+  font-family: var(--Gilroy);
+  font-size: calc(var(--size-2xl) + 2px);
+  font-style: normal;
+  font-weight: var(--weight-xxlg);
+  line-height: 61px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white);
+}
+
+.login__wrapper {
+  height: 100vh;
+  /* overflow: hidden; */
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.login__content {
+  max-height: 100%;
+  background: var(--red);
+  clip-path: polygon(0 0, 99% 0, 80% 100%, 0% 100%);
+}
+
+.login__overlay {
+  background: var(--blue);
+  clip-path: polygon(0 0, 92% 0, 78% 100%, 0% 100%);
+  height: 100%;
+  padding-block-start: var(--span-m);
+  padding-inline-start: calc(var(--span-2xl) + var(--span-s));
+}
+
+.login__link {
+  display: inline-block;
+}
+
+.login__hero {
+  margin-top: 8px;
+}
+
+.login__image {
+  display: block;
+  padding-bottom: var(--span-m);
+}
+
+.login__logo-box {
+  padding-bottom: calc(1.5 * var(--span-2xl));
+}
+
+.login__form {
+  background: inherit;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-inline-end: calc(var(--span-2xl) + var(--span-s));
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.circle--1 {
+  width: 100px;
+  height: 100px;
+  right: 0px;
+  top: 60px;
+  /* border: 3px solid var(--circle-1); */
+}
+
+.circle--2,
+.circle--3 {
+  width: 48px;
+  height: 48px;
+}
+
+.circle--2 {
+  top: 183px;
+  right: 70px;
+  border: 2px solid var(--circle-2);
+}
+
+.circle--3 {
+  top: 240px;
+  right: 120px;
+  border: 2px solid var(--circle-3);
+}
+
+.form__input {
+  display: block;
+  border: 0.5px solid var(--blue);
+  border-radius: 10px;
+  background: var(--white);
+  outline: none;
+  font-family: var(--Gilroy);
+  font-size: calc(var(--size-m) + 2px);
+  font-weight: var(--weight-sm);
+  line-height: 21px;
+  padding: var(--span-s) calc(var(--span-s) + 5px);
+  height: 70px;
+  width: 100%;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.form__label {
+  font-family: var(--Gilroy);
+  font-size: calc(var(--size-m) + 2px);
+  font-style: normal;
+  font-weight: var(--weight-sm);
+  line-height: 21px;
+  letter-spacing: 0.12em;
+  text-align: left;
+  color: var(--blue);
+  margin-bottom: var(--span-xs);
+  display: block;
+}
+
+.form {
+  max-width: 100%;
+  flex: 0 0 100%;
+  position: relative;
+  z-index: 2;
+  padding-top: 316px;
+}
+
+.form__header {
+  font-family: var(--Gilroy);
+  font-size: var(--size-xl);
+  font-style: normal;
+  font-weight: var(--weight-xxlg);
+  line-height: 39px;
+  letter-spacing: 0.12em;
+  text-align: left;
+  color: var(--blue);
+  margin-bottom: var(--span-l);
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: var(--span-l);
+}
